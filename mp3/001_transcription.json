@@ -1,0 +1,374 @@
+{
+  "words": [
+    {
+      "word": "Lesson",
+      "start": 2.26,
+      "end": 3.0
+    },
+    {
+      "word": "1",
+      "start": 3.0,
+      "end": 3.42
+    },
+    {
+      "word": "The",
+      "start": 3.42,
+      "end": 5.6
+    },
+    {
+      "word": "Day",
+      "start": 5.6,
+      "end": 6.0
+    },
+    {
+      "word": "I",
+      "start": 6.0,
+      "end": 6.36
+    },
+    {
+      "word": "Broke",
+      "start": 6.36,
+      "end": 6.74
+    },
+    {
+      "word": "the",
+      "start": 6.74,
+      "end": 6.94
+    },
+    {
+      "word": "Rules",
+      "start": 6.94,
+      "end": 7.48
+    },
+    {
+      "word": "Reading",
+      "start": 12.89,
+      "end": 13.26
+    },
+    {
+      "word": "Selection",
+      "start": 13.26,
+      "end": 13.86
+    },
+    {
+      "word": "A",
+      "start": 13.86,
+      "end": 14.86
+    },
+    {
+      "word": "few",
+      "start": 14.86,
+      "end": 15.06
+    },
+    {
+      "word": "years",
+      "start": 15.06,
+      "end": 15.38
+    },
+    {
+      "word": "ago",
+      "start": 15.38,
+      "end": 15.62
+    },
+    {
+      "word": "I",
+      "start": 15.76,
+      "end": 16.04
+    },
+    {
+      "word": "was",
+      "start": 16.04,
+      "end": 16.22
+    },
+    {
+      "word": "employed",
+      "start": 16.22,
+      "end": 16.62
+    },
+    {
+      "word": "by",
+      "start": 16.62,
+      "end": 16.92
+    },
+    {
+      "word": "the",
+      "start": 16.92,
+      "end": 17.12
+    },
+    {
+      "word": "McDonalds",
+      "start": 17.12,
+      "end": 17.74
+    },
+    {
+      "word": "Corporation",
+      "start": 17.74,
+      "end": 18.22
+    },
+    {
+      "word": "On",
+      "start": 19.08,
+      "end": 19.38
+    },
+    {
+      "word": "Ronald",
+      "start": 19.38,
+      "end": 19.8
+    },
+    {
+      "word": "Day",
+      "start": 19.8,
+      "end": 20.18
+    },
+    {
+      "word": "I",
+      "start": 20.38,
+      "end": 20.58
+    },
+    {
+      "word": "would",
+      "start": 20.58,
+      "end": 20.76
+    },
+    {
+      "word": "dress",
+      "start": 20.76,
+      "end": 21.04
+    },
+    {
+      "word": "up",
+      "start": 21.04,
+      "end": 21.28
+    },
+    {
+      "word": "as",
+      "start": 21.28,
+      "end": 21.44
+    },
+    {
+      "word": "Ronald",
+      "start": 21.44,
+      "end": 21.76
+    },
+    {
+      "word": "McDonald",
+      "start": 21.76,
+      "end": 22.22
+    },
+    {
+      "word": "and",
+      "start": 22.22,
+      "end": 22.82
+    },
+    {
+      "word": "visit",
+      "start": 22.82,
+      "end": 23.12
+    },
+    {
+      "word": "the",
+      "start": 23.12,
+      "end": 23.36
+    },
+    {
+      "word": "community",
+      "start": 23.36,
+      "end": 23.8
+    },
+    {
+      "word": "hospitals",
+      "start": 23.8,
+      "end": 24.64
+    },
+    {
+      "word": "sick",
+      "start": 24.64,
+      "end": 24.96
+    },
+    {
+      "word": "children",
+      "start": 24.96,
+      "end": 25.4
+    },
+    {
+      "word": "Most",
+      "start": 25.98,
+      "end": 26.3
+    },
+    {
+      "word": "of",
+      "start": 26.3,
+      "end": 26.5
+    },
+    {
+      "word": "these",
+      "start": 26.5,
+      "end": 26.7
+    },
+    {
+      "word": "young",
+      "start": 26.7,
+      "end": 26.98
+    },
+    {
+      "word": "patients",
+      "start": 26.98,
+      "end": 27.46
+    },
+    {
+      "word": "were",
+      "start": 27.46,
+      "end": 27.68
+    },
+    {
+      "word": "suffering",
+      "start": 27.68,
+      "end": 28.08
+    },
+    {
+      "word": "from",
+      "start": 28.08,
+      "end": 28.4
+    },
+    {
+      "word": "terminal",
+      "start": 28.4,
+      "end": 28.84
+    },
+    {
+      "word": "illnesses",
+      "start": 28.84,
+      "end": 29.38
+    },
+    {
+      "word": "Thus",
+      "start": 30.12,
+      "end": 30.48
+    },
+    {
+      "word": "I",
+      "start": 30.8,
+      "end": 31.08
+    },
+    {
+      "word": "would",
+      "start": 31.08,
+      "end": 31.26
+    },
+    {
+      "word": "try",
+      "start": 31.26,
+      "end": 31.54
+    },
+    {
+      "word": "my",
+      "start": 31.54,
+      "end": 31.78
+    },
+    {
+      "word": "best",
+      "start": 31.78,
+      "end": 32.28
+    },
+    {
+      "word": "to",
+      "start": 32.28,
+      "end": 32.62
+    },
+    {
+      "word": "ease",
+      "start": 32.62,
+      "end": 32.98
+    },
+    {
+      "word": "their",
+      "start": 32.98,
+      "end": 33.22
+    },
+    {
+      "word": "pain",
+      "start": 33.22,
+      "end": 33.58
+    },
+    {
+      "word": "And",
+      "start": 34.08,
+      "end": 34.46
+    },
+    {
+      "word": "I",
+      "start": 34.46,
+      "end": 34.66
+    },
+    {
+      "word": "found",
+      "start": 34.66,
+      "end": 34.94
+    },
+    {
+      "word": "it",
+      "start": 34.94,
+      "end": 35.12
+    },
+    {
+      "word": "tremendously",
+      "start": 35.12,
+      "end": 35.7
+    },
+    {
+      "word": "rewarding",
+      "start": 35.7,
+      "end": 36.38
+    },
+    {
+      "word": "to",
+      "start": 36.38,
+      "end": 37.02
+    },
+    {
+      "word": "be",
+      "start": 37.02,
+      "end": 37.2
+    },
+    {
+      "word": "able",
+      "start": 37.2,
+      "end": 37.5
+    },
+    {
+      "word": "to",
+      "start": 37.5,
+      "end": 37.78
+    },
+    {
+      "word": "bring",
+      "start": 37.78,
+      "end": 38.06
+    },
+    {
+      "word": "some",
+      "start": 38.06,
+      "end": 38.38
+    },
+    {
+      "word": "laughter",
+      "start": 38.38,
+      "end": 38.8
+    },
+    {
+      "word": "to",
+      "start": 38.8,
+      "end": 39.34
+    },
+    {
+      "word": "the",
+      "start": 39.34,
+      "end": 39.52
+    },
+    {
+      "word": "kids",
+      "start": 39.52,
+      "end": 39.96
+    }
+  ]
+}

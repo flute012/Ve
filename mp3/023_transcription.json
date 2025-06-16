@@ -1,0 +1,559 @@
+{
+  "words": [
+    {
+      "word": "The",
+      "start": 0.0,
+      "end": 0.8
+    },
+    {
+      "word": "Marshmallow",
+      "start": 0.8,
+      "end": 1.64
+    },
+    {
+      "word": "Challenge",
+      "start": 1.64,
+      "end": 2.26
+    },
+    {
+      "word": "promoted",
+      "start": 2.68,
+      "end": 3.14
+    },
+    {
+      "word": "by",
+      "start": 3.14,
+      "end": 3.66
+    },
+    {
+      "word": "Canadian",
+      "start": 3.66,
+      "end": 4.36
+    },
+    {
+      "word": "technology",
+      "start": 4.36,
+      "end": 5.26
+    },
+    {
+      "word": "expert",
+      "start": 5.26,
+      "end": 5.96
+    },
+    {
+      "word": "Tom",
+      "start": 5.96,
+      "end": 6.9
+    },
+    {
+      "word": "Ujek",
+      "start": 6.9,
+      "end": 7.4
+    },
+    {
+      "word": "has",
+      "start": 8.2,
+      "end": 8.46
+    },
+    {
+      "word": "been",
+      "start": 8.46,
+      "end": 8.68
+    },
+    {
+      "word": "conducted",
+      "start": 8.68,
+      "end": 9.3
+    },
+    {
+      "word": "around",
+      "start": 9.3,
+      "end": 10.02
+    },
+    {
+      "word": "the",
+      "start": 10.02,
+      "end": 10.3
+    },
+    {
+      "word": "world",
+      "start": 10.3,
+      "end": 10.78
+    },
+    {
+      "word": "with",
+      "start": 10.78,
+      "end": 11.52
+    },
+    {
+      "word": "architects",
+      "start": 11.52,
+      "end": 12.1
+    },
+    {
+      "word": "and",
+      "start": 12.1,
+      "end": 12.76
+    },
+    {
+      "word": "engineers",
+      "start": 12.76,
+      "end": 13.54
+    },
+    {
+      "word": "CEOs",
+      "start": 14.28,
+      "end": 14.78
+    },
+    {
+      "word": "lawyers",
+      "start": 15.82,
+      "end": 16.24
+    },
+    {
+      "word": "business",
+      "start": 17.02,
+      "end": 17.42
+    },
+    {
+      "word": "graduates",
+      "start": 17.42,
+      "end": 18.16
+    },
+    {
+      "word": "and",
+      "start": 18.72,
+      "end": 18.92
+    },
+    {
+      "word": "even",
+      "start": 18.92,
+      "end": 19.4
+    },
+    {
+      "word": "kindergartners",
+      "start": 19.4,
+      "end": 20.58
+    },
+    {
+      "word": "Over",
+      "start": 21.84,
+      "end": 22.18
+    },
+    {
+      "word": "the",
+      "start": 22.18,
+      "end": 22.52
+    },
+    {
+      "word": "years",
+      "start": 22.52,
+      "end": 23.1
+    },
+    {
+      "word": "the",
+      "start": 23.48,
+      "end": 23.76
+    },
+    {
+      "word": "challenge",
+      "start": 23.76,
+      "end": 24.34
+    },
+    {
+      "word": "has",
+      "start": 24.34,
+      "end": 24.76
+    },
+    {
+      "word": "produced",
+      "start": 24.76,
+      "end": 25.44
+    },
+    {
+      "word": "some",
+      "start": 25.44,
+      "end": 26.08
+    },
+    {
+      "word": "surprising",
+      "start": 26.08,
+      "end": 26.82
+    },
+    {
+      "word": "results",
+      "start": 26.82,
+      "end": 27.72
+    },
+    {
+      "word": "In",
+      "start": 28.45,
+      "end": 29.08
+    },
+    {
+      "word": "Ujeks",
+      "start": 29.08,
+      "end": 29.84
+    },
+    {
+      "word": "study",
+      "start": 29.84,
+      "end": 30.5
+    },
+    {
+      "word": "the",
+      "start": 31.36,
+      "end": 31.5
+    },
+    {
+      "word": "average",
+      "start": 31.5,
+      "end": 31.96
+    },
+    {
+      "word": "height",
+      "start": 31.96,
+      "end": 32.44
+    },
+    {
+      "word": "of",
+      "start": 32.44,
+      "end": 32.78
+    },
+    {
+      "word": "the",
+      "start": 32.78,
+      "end": 32.96
+    },
+    {
+      "word": "structures",
+      "start": 32.96,
+      "end": 33.6
+    },
+    {
+      "word": "constructed",
+      "start": 33.6,
+      "end": 34.64
+    },
+    {
+      "word": "was",
+      "start": 34.64,
+      "end": 35.66
+    },
+    {
+      "word": "20",
+      "start": 35.66,
+      "end": 36.14
+    },
+    {
+      "word": "inches",
+      "start": 36.14,
+      "end": 36.86
+    },
+    {
+      "word": "The",
+      "start": 37.94,
+      "end": 38.12
+    },
+    {
+      "word": "group",
+      "start": 38.12,
+      "end": 38.5
+    },
+    {
+      "word": "that",
+      "start": 38.5,
+      "end": 38.82
+    },
+    {
+      "word": "built",
+      "start": 38.82,
+      "end": 39.28
+    },
+    {
+      "word": "the",
+      "start": 39.28,
+      "end": 39.74
+    },
+    {
+      "word": "highest",
+      "start": 39.74,
+      "end": 40.28
+    },
+    {
+      "word": "structure",
+      "start": 40.28,
+      "end": 40.98
+    },
+    {
+      "word": "was",
+      "start": 40.98,
+      "end": 41.84
+    },
+    {
+      "word": "as",
+      "start": 42.5,
+      "end": 42.88
+    },
+    {
+      "word": "expected",
+      "start": 42.88,
+      "end": 43.58
+    },
+    {
+      "word": "architects",
+      "start": 44.56,
+      "end": 45.0
+    },
+    {
+      "word": "and",
+      "start": 45.0,
+      "end": 45.78
+    },
+    {
+      "word": "engineers",
+      "start": 45.78,
+      "end": 46.72
+    },
+    {
+      "word": "CEOs",
+      "start": 47.62,
+      "end": 48.36
+    },
+    {
+      "word": "performed",
+      "start": 48.36,
+      "end": 50.02
+    },
+    {
+      "word": "slightly",
+      "start": 50.02,
+      "end": 50.72
+    },
+    {
+      "word": "better",
+      "start": 50.72,
+      "end": 51.26
+    },
+    {
+      "word": "than",
+      "start": 51.26,
+      "end": 51.64
+    },
+    {
+      "word": "average",
+      "start": 51.64,
+      "end": 52.26
+    },
+    {
+      "word": "coming",
+      "start": 52.84,
+      "end": 53.18
+    },
+    {
+      "word": "in",
+      "start": 53.18,
+      "end": 53.56
+    },
+    {
+      "word": "third",
+      "start": 53.56,
+      "end": 54.04
+    },
+    {
+      "word": "Lawyers",
+      "start": 55.04,
+      "end": 55.72
+    },
+    {
+      "word": "on",
+      "start": 55.96,
+      "end": 56.3
+    },
+    {
+      "word": "the",
+      "start": 56.3,
+      "end": 56.48
+    },
+    {
+      "word": "other",
+      "start": 56.48,
+      "end": 56.78
+    },
+    {
+      "word": "hand",
+      "start": 56.78,
+      "end": 57.32
+    },
+    {
+      "word": "performed",
+      "start": 57.88,
+      "end": 58.4
+    },
+    {
+      "word": "below",
+      "start": 58.4,
+      "end": 59.4
+    },
+    {
+      "word": "average",
+      "start": 59.4,
+      "end": 60.24
+    },
+    {
+      "word": "ranking",
+      "start": 61.16,
+      "end": 61.52
+    },
+    {
+      "word": "second",
+      "start": 61.52,
+      "end": 62.56
+    },
+    {
+      "word": "to",
+      "start": 62.56,
+      "end": 63.02
+    },
+    {
+      "word": "last",
+      "start": 63.02,
+      "end": 63.66
+    },
+    {
+      "word": "And",
+      "start": 64.76,
+      "end": 65.02
+    },
+    {
+      "word": "despite",
+      "start": 65.02,
+      "end": 65.38
+    },
+    {
+      "word": "working",
+      "start": 65.38,
+      "end": 66.04
+    },
+    {
+      "word": "to",
+      "start": 66.04,
+      "end": 66.48
+    },
+    {
+      "word": "create",
+      "start": 66.48,
+      "end": 67.1
+    },
+    {
+      "word": "the",
+      "start": 67.1,
+      "end": 67.84
+    },
+    {
+      "word": "best",
+      "start": 67.84,
+      "end": 68.36
+    },
+    {
+      "word": "plan",
+      "start": 68.36,
+      "end": 69.1
+    },
+    {
+      "word": "business",
+      "start": 69.9,
+      "end": 70.4
+    },
+    {
+      "word": "graduates",
+      "start": 70.4,
+      "end": 71.24
+    },
+    {
+      "word": "performed",
+      "start": 71.24,
+      "end": 72.4
+    },
+    {
+      "word": "the",
+      "start": 72.4,
+      "end": 72.9
+    },
+    {
+      "word": "worst",
+      "start": 72.9,
+      "end": 73.6
+    },
+    {
+      "word": "Amazingly",
+      "start": 74.6,
+      "end": 75.74
+    },
+    {
+      "word": "kindergartners",
+      "start": 76.34,
+      "end": 77.64
+    },
+    {
+      "word": "outperformed",
+      "start": 77.64,
+      "end": 79.18
+    },
+    {
+      "word": "most",
+      "start": 79.18,
+      "end": 79.8
+    },
+    {
+      "word": "of",
+      "start": 79.8,
+      "end": 80.06
+    },
+    {
+      "word": "the",
+      "start": 80.06,
+      "end": 80.22
+    },
+    {
+      "word": "adult",
+      "start": 80.22,
+      "end": 80.74
+    },
+    {
+      "word": "teams",
+      "start": 80.74,
+      "end": 81.44
+    },
+    {
+      "word": "to",
+      "start": 81.44,
+      "end": 82.12
+    },
+    {
+      "word": "achieve",
+      "start": 82.12,
+      "end": 82.6
+    },
+    {
+      "word": "the",
+      "start": 82.6,
+      "end": 82.88
+    },
+    {
+      "word": "second",
+      "start": 82.88,
+      "end": 83.34
+    },
+    {
+      "word": "best",
+      "start": 83.34,
+      "end": 83.8
+    },
+    {
+      "word": "performance",
+      "start": 83.8,
+      "end": 84.44
+    }
+  ]
+}

@@ -1,0 +1,1770 @@
+{
+  "L1": {
+    "lessonName": "L01 The Day I Broke the Rules",
+    "content": [
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 1 ~ 12",
+        "url": "./mp3/013.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 13 ~ 25",
+        "url": "./mp3/014.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Idioms and Phrases",
+        "url": "./mp3/015.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Recognition",
+        "url": "./mp3/016.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-normal",
+        "url": "./mp3/001.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-normal",
+        "url": "./mp3/002.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-normal",
+        "url": "./mp3/003.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-normal",
+        "url": "./mp3/004.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 5 段 Reading Selection-normal",
+        "url": "./mp3/005.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 6 段 Reading Selection-normal",
+        "url": "./mp3/006.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-slow",
+        "url": "./mp3/007.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/008.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/009.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-slow",
+        "url": "./mp3/010.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 5 段 Reading Selection-slow",
+        "url": "./mp3/011.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 6 段 Reading Selection-slow",
+        "url": "./mp3/012.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/6CxOobu",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/OK25j2m",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/TbJMDgh",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文講解影片",
+        "subTitle": "",
+        "url": "https://ltn.tw/3EB9Z9g",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文Edpuzzle",
+        "subTitle": "",
+        "url": "https://ltn.tw/H8f7mOO",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for Details",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for the Gist",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Vocabulary Preview",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/Vd3qqAX",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/hHUccqz",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/aVqQY3M",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/BjneULK",
+        "type": "link"
+      }
+    ]
+  },
+  "L2": {
+    "lessonName": "L02 The Marshmallow Challenge: A Lesson in Keeping It Simple",
+    "content": [
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/Vd3AhEX",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-normal",
+        "url": "./mp3/018.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-normal",
+        "url": "./mp3/019.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-normal",
+        "url": "./mp3/020.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-normal",
+        "url": "./mp3/021.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-slow",
+        "url": "./mp3/022.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/023.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/024.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-slow",
+        "url": "./mp3/025.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 1 ~ 10",
+        "url": "./mp3/026.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 11 ~ 20",
+        "url": "./mp3/027.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Idioms and Phrases",
+        "url": "./mp3/028.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Recognition",
+        "url": "./mp3/029.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/8MmQZ2A",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/IrANbjk",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文講解影片",
+        "subTitle": "",
+        "url": "https://ltn.tw/A69uZ8F",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文Edpuzzle",
+        "subTitle": "",
+        "url": "https://ltn.tw/vNynIhR",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for Details",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for the Gist",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Vocabulary Preview",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/yuir9Hf",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/IrARiQk",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/dXE3XU1",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/QqbTLYc",
+        "type": "link"
+      }
+    ]
+  },
+  "L3": {
+    "lessonName": "L03 Prometheus: The Champion of Humankind",
+    "content": [
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/gBeDIVi",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/ZL4JLEs",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-normal",
+        "url": "./mp3/031.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-normal",
+        "url": "./mp3/032.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-normal",
+        "url": "./mp3/033.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-normal",
+        "url": "./mp3/034.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-slow",
+        "url": "./mp3/035.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/036.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/037.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-slow",
+        "url": "./mp3/038.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 1 ~ 10",
+        "url": "./mp3/039.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 11 ~ 21",
+        "url": "./mp3/040.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Idioms and Phrases",
+        "url": "./mp3/041.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Recognition",
+        "url": "./mp3/042.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/W9Xinta",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文講解影片",
+        "subTitle": "",
+        "url": "https://ltn.tw/c7pG3Yn",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文Edpuzzle",
+        "subTitle": "",
+        "url": "https://ltn.tw/521C848",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for Details",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for the Gist",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Vocabulary Preview",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/zyrS5bI",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/c7peUjn",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/TbJ2qJh",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/aVqQyxM",
+        "type": "link"
+      }
+    ]
+  },
+  "L4": {
+    "lessonName": "L04 Day of the Dead: A Joyous Celebration of Death",
+    "content": [
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/ozIPg5D",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/YUOusDv",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/521f738",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-normal",
+        "url": "./mp3/053.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-normal",
+        "url": "./mp3/054.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-normal",
+        "url": "./mp3/055.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-normal",
+        "url": "./mp3/056.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 5 段 Reading Selection-normal",
+        "url": "./mp3/057.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-slow",
+        "url": "./mp3/058.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/059.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/060.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-slow",
+        "url": "./mp3/061.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 5 段 Reading Selection-slow",
+        "url": "./mp3/062.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 1 ~ 12",
+        "url": "./mp3/063.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 13 ~ 25",
+        "url": "./mp3/064.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Idioms and Phrases",
+        "url": "./mp3/065.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Recognition",
+        "url": "./mp3/066.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文講解影片",
+        "subTitle": "",
+        "url": "https://ltn.tw/8MmfVWA",
+        "type": "link"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/FaQ7TwZ",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/OK25Edm",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/521C8A8",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/EPjBumG",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文Edpuzzle",
+        "subTitle": "",
+        "url": "https://ltn.tw/LcG4HXq",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for Details",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for the Gist",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Vocabulary Preview",
+        "url": "",
+        "type": "link"
+      }
+    ]
+  },
+  "L5": {
+    "lessonName": "L05 Kyoto: The Heart of Japan",
+    "content": [
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/gBeDmRi",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/i5C6fgL",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/2sS1fnC",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-normal",
+        "url": "./mp3/068.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-normal",
+        "url": "./mp3/069.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-normal",
+        "url": "./mp3/070.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-normal",
+        "url": "./mp3/071.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-slow",
+        "url": "./mp3/072.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/073.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/074.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-slow",
+        "url": "./mp3/075.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 1 ~ 10",
+        "url": "./mp3/077.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Idioms and Phrases",
+        "url": "./mp3/078.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 11 ~ 20",
+        "url": "./mp3/078.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Recognition",
+        "url": "./mp3/079.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文講解影片",
+        "subTitle": "",
+        "url": "https://ltn.tw/2sS1eeC",
+        "type": "link"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/JDw3dh9",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/yuirmcf",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/vNyzpQR",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/MJk1UKN",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文Edpuzzle",
+        "subTitle": "",
+        "url": "https://ltn.tw/A69Wd2F",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for Details",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for the Gist",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Vocabulary Preview",
+        "url": "",
+        "type": "link"
+      }
+    ]
+  },
+  "L6": {
+    "lessonName": "L06 The Country of the Blind",
+    "content": [
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/UfKOaq2",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/IrARhdk",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/uO5iGSS",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文講解影片",
+        "subTitle": "",
+        "url": "https://ltn.tw/2sS1IVC",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/089.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/090.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-slow",
+        "url": "./mp3/091.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 5 段 Reading Selection-slow",
+        "url": "./mp3/092.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 6 段 Reading Selection-slow",
+        "url": "./mp3/093.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 7 段 Reading Selection-slow",
+        "url": "./mp3/094.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 1 ~ 12",
+        "url": "./mp3/095.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 13 ~ 24",
+        "url": "./mp3/096.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Idioms and Phrases",
+        "url": "./mp3/097.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Recognition",
+        "url": "./mp3/098.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/ri6Atcx",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/EPjxH9G",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/W9Xdsya",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/q3gZzmp",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文Edpuzzle",
+        "subTitle": "",
+        "url": "https://ltn.tw/JDw31Y9",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for Details",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for the Gist",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Vocabulary Preview",
+        "url": "",
+        "type": "link"
+      }
+    ]
+  },
+  "L7": {
+    "lessonName": "L07 Bodies Speak Louder Than Words",
+    "content": [
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/i5C6GDL",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/MJkmg2N",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/RAWtb8t",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文講解影片",
+        "subTitle": "",
+        "url": "https://ltn.tw/q3gbRop",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-slow",
+        "url": "./mp3/113.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/114.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/115.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-slow",
+        "url": "./mp3/116.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 1 ~ 11",
+        "url": "./mp3/117.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 12 ~ 23",
+        "url": "./mp3/118.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Idioms and Phrases",
+        "url": "./mp3/119.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Recognition",
+        "url": "./mp3/120.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/c7peann",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/pTMa5c3",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/A69W91F",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/q3gb6xp",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文Edpuzzle",
+        "subTitle": "",
+        "url": "https://ltn.tw/NYu44tr",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for Details",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for the Gist",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Vocabulary Preview",
+        "url": "",
+        "type": "link"
+      }
+    ]
+  },
+  "L8": {
+    "lessonName": "L08 Elephant Abuse: The Thai Tourism Industry’s Dark Secret",
+    "content": [
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/ZL4JWNs",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/H8fUT7O",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/1SNZK1B",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文講解影片",
+        "subTitle": "",
+        "url": "https://ltn.tw/Vd3qLcX",
+        "type": "link"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/c7pG9In",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-slow",
+        "url": "./mp3/126.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/127.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/128.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-slow",
+        "url": "./mp3/129.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 1 ~ 10",
+        "url": "./mp3/130.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 11 ~ 20",
+        "url": "./mp3/131.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Idioms and Phrases",
+        "url": "./mp3/132.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Recognition",
+        "url": "./mp3/133.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/YUOucnv",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/mkLZtYj",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/IrARpik",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文Edpuzzle",
+        "subTitle": "",
+        "url": "https://ltn.tw/KZs2mFJ",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for Details",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for the Gist",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Vocabulary Preview",
+        "url": "",
+        "type": "link"
+      }
+    ]
+  },
+  "L9": {
+    "lessonName": "L09 Mazu Mania: A Great Pilgrimage That Unifies the People",
+    "content": [
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/c7pG7an",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/UfKOqH2",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/2sSmOSC",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文講解影片",
+        "subTitle": "",
+        "url": "https://ltn.tw/Gp8FdDH",
+        "type": "link"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/c7pGNsn",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/BjneA3K",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-slow",
+        "url": "./mp3/139.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/140.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/141.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-slow",
+        "url": "./mp3/142.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 1 ~ 12",
+        "url": "./mp3/143.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Production 13 ~ 24",
+        "url": "./mp3/144.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Idioms and Phrases",
+        "url": "./mp3/145.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "字彙朗讀",
+        "subTitle": "Words for Recognition",
+        "url": "./mp3/146.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/Gp8iv5H",
+        "type": "link"
+      },
+      {
+        "category": "課前暖身",
+        "mainTitle": "Thinking Ahead影片",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/xvzoBBW",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文Edpuzzle",
+        "subTitle": "",
+        "url": "https://ltn.tw/BjneThK",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for Details",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Listen for the Gist",
+        "url": "",
+        "type": "link"
+      },
+      {
+        "category": "聽力練習",
+        "mainTitle": "Listening Strategy",
+        "subTitle": "Vocabulary Preview",
+        "url": "",
+        "type": "link"
+      }
+    ]
+  },
+  "R1": {
+    "lessonName": "R01 3D Printing: Imagination Is the Only Limit",
+    "content": [
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/enaFdK4",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/c7pusOn",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/ZL4s16s",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-normal",
+        "url": "./mp3/044.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-normal",
+        "url": "./mp3/045.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-normal",
+        "url": "./mp3/046.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4~5 段 Reading Selection-normal",
+        "url": "./mp3/047.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-slow",
+        "url": "./mp3/048.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/049.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/050.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4~5 段 Reading Selection-slow",
+        "url": "./mp3/051.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/yuiVYAf",
+        "type": "link"
+      }
+    ]
+  },
+  "R2": {
+    "lessonName": "R02 The Mystery of the Disappearing Bees",
+    "content": [
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/DeFwQTU",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/7QTO4gw",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/vNyzukR",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-normal",
+        "url": "./mp3/100.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-normal",
+        "url": "./mp3/101.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-normal",
+        "url": "./mp3/102.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-normal",
+        "url": "./mp3/103.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-slow",
+        "url": "./mp3/104.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/105.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/106.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-slow",
+        "url": "./mp3/107.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/XoPwqze",
+        "type": "link"
+      }
+    ]
+  },
+  "R3": {
+    "lessonName": "R03 Fast Fashion, but at What Cost?",
+    "content": [
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "中英字幕",
+        "url": "https://ltn.tw/8MmfogA",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "英文字幕",
+        "url": "https://ltn.tw/c7peT8n",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文動畫",
+        "subTitle": "無字幕",
+        "url": "https://ltn.tw/RAWtM6t",
+        "type": "link"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-normal",
+        "url": "./mp3/148.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-normal",
+        "url": "./mp3/149.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-normal",
+        "url": "./mp3/150.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-normal",
+        "url": "./mp3/151.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 1 段 Reading Selection-slow",
+        "url": "./mp3/152.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 2 段 Reading Selection-slow",
+        "url": "./mp3/153.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 3 段 Reading Selection-slow",
+        "url": "./mp3/154.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "課文學習",
+        "mainTitle": "課文朗讀",
+        "subTitle": "第 4 段 Reading Selection-slow",
+        "url": "./mp3/155.mp3",
+        "type": "audio"
+      },
+      {
+        "category": "字彙學習",
+        "mainTitle": "Quizlet",
+        "subTitle": "",
+        "url": "https://ltn.tw/LcG4vnq",
+        "type": "link"
+      }
+    ]
+  }
+}
