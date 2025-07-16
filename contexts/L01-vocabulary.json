@@ -1,0 +1,486 @@
+[
+  {
+    "section": "Words for Production",
+    "word_forms": [
+      {
+        "root_word": "champion",
+        "word": "champion",
+        "phonetics": "[ˈtʃæmpɪən]",
+        "pos": "n",
+        "definition_zh": "冠軍",
+        "number": "wp_1"
+      },
+      {
+        "root_word": "dedication",
+        "word": "dedication",
+        "phonetics": "[ˏdɛdəˈkeʃən]",
+        "pos": "n",
+        "definition_zh": "奉獻；投入",
+        "number": "wp_2"
+      },
+      {
+        "root_word": "dedication",
+        "word": "dedicate",
+        "phonetics": "[ˈdɛdəˌkeɪt]",
+        "pos": "vt",
+        "verb_pattern": "dedicate-dedicated-dedicated",
+        "definition_zh": "把……奉獻於；將……投入於",
+        "number": "wp_2_1"
+      },
+      {
+        "root_word": "medal",
+        "word": "medal",
+        "phonetics": "[ˈmɛdḷ]",
+        "pos": "n",
+        "definition_zh": "獎牌",
+        "number": "wp_3"
+      },
+      {
+        "root_word": "injury",
+        "word": "injury",
+        "phonetics": "[ˈɪndʒərɪ]",
+        "pos": "n",
+        "definition_zh": "受傷",
+        "number": "wp_4"
+      },
+      {
+        "root_word": "injury",
+        "word": "injure",
+        "phonetics": "[ˈɪndʒɚ]",
+        "pos": "vt",
+        "verb_pattern": "injure-injured-injured",
+        "definition_zh": "使……受傷",
+        "number": "wp_4_1"
+      },
+      {
+        "root_word": "success",
+        "word": "success",
+        "phonetics": "[səkˈsɛs]",
+        "pos": "n",
+        "definition_zh": "成功",
+        "number": "wp_5"
+      },
+      {
+        "root_word": "success",
+        "word": "success",
+        "phonetics": "[səkˈsɛs]",
+        "pos": "n",
+        "definition_zh": "成功的人、事物",
+        "number": "wp_5_1"
+      },
+      {
+        "root_word": "success",
+        "word": "succeed",
+        "phonetics": "[səkˈsid]",
+        "pos": "vi",
+        "verb_pattern": "succeed-succeeded-succeeded",
+        "definition_zh": "成功辦到",
+        "number": "wp_5_2"
+      },
+      {
+        "root_word": "success",
+        "word": "successful",
+        "phonetics": "[səkˈsɛsfəl]",
+        "pos": "adj",
+        "definition_zh": "成功的",
+        "number": "wp_5_3"
+      },
+      {
+        "root_word": "pain",
+        "word": "pain",
+        "phonetics": "[peɪn]",
+        "pos": "n",
+        "definition_zh": "疼痛",
+        "number": "wp_6"
+      },
+      {
+        "root_word": "pain",
+        "word": "painfully",
+        "phonetics": "[ˈpeɪnfəlɪ]",
+        "pos": "adv",
+        "definition_zh": "痛苦地",
+        "number": "wp_6_1"
+      },
+      {
+        "root_word": "pain",
+        "word": "painful",
+        "phonetics": "[ˈpeɪnfəl]",
+        "pos": "adj",
+        "definition_zh": "疼痛的",
+        "number": "wp_6_2"
+      },
+      {
+        "root_word": "pain",
+        "word": "painful",
+        "phonetics": "[ˈpeɪnfəl]",
+        "pos": "adj",
+        "definition_zh": "令人痛苦的",
+        "number": "wp_6_3"
+      },
+      {
+        "root_word": "immediately",
+        "word": "immediately",
+        "phonetics": "[ɪˈmɪdiətlɪ]",
+        "pos": "adv",
+        "definition_zh": "立即；馬上",
+        "definition_en": "right away or without delay",
+        "number": "wp_7"
+      },
+      {
+        "root_word": "immediately",
+        "word": "immediate",
+        "phonetics": "[ɪˈmɪdiət]",
+        "pos": "adj",
+        "definition_zh": "立即的",
+        "number": "wp_7_1"
+      },
+      {
+        "root_word": "collapse",
+        "word": "collapse",
+        "phonetics": "[kəˈlæps]",
+        "pos": "vi",
+        "verb_pattern": "collapse-collapsed-collapsed",
+        "definition_zh": "倒下",
+        "definition_en": "to fall down, especially when one faints or feels very weak",
+        "number": "wp_8"
+      },
+      {
+        "root_word": "collapse",
+        "word": "collapse",
+        "phonetics": "[kəˈlæps]",
+        "pos": "vi",
+        "verb_pattern": "collapse-collapsed-collapsed",
+        "definition_zh": "倒塌",
+        "number": "wp_8_1"
+      },
+      {
+        "root_word": "collapse",
+        "word": "collapse",
+        "phonetics": "[kəˈlæps]",
+        "pos": "n",
+        "definition_zh": "倒塌",
+        "number": "wp_8_2"
+      },
+      {
+        "root_word": "medical",
+        "word": "medical",
+        "phonetics": "[ˈmɛdɪkəl]",
+        "pos": "adj",
+        "definition_zh": "醫療的",
+        "number": "wp_9"
+      },
+      {
+        "root_word": "staff",
+        "word": "staff",
+        "phonetics": "[stæf]",
+        "pos": "n",
+        "definition_zh": "全體員工",
+        "number": "wp_10"
+      },
+      {
+        "root_word": "courage",
+        "word": "courage",
+        "phonetics": "[ˈkɜrɪdʒ]",
+        "pos": "n",
+        "definition_zh": "勇氣",
+        "number": "wp_11"
+      },
+      {
+        "root_word": "strength",
+        "word": "strength",
+        "phonetics": "[strɛŋθ]",
+        "pos": "n",
+        "definition_zh": "意志力",
+        "number": "wp_12"
+      },
+      {
+        "root_word": "strength",
+        "word": "strength",
+        "phonetics": "[strɛŋθ]",
+        "pos": "n",
+        "definition_zh": "體力；力量",
+        "number": "wp_12_1"
+      },
+      {
+        "root_word": "strength",
+        "word": "strengthen",
+        "phonetics": "[ˈstrɛŋθən]",
+        "pos": "vt",
+        "verb_pattern": "strengthen-strengthened-strengthened",
+        "definition_zh": "強化",
+        "number": "wp_12_2"
+      },
+      {
+        "root_word": "support",
+        "word": "support",
+        "phonetics": "[səˈpɔrt]",
+        "pos": "n",
+        "definition_zh": "支持",
+        "number": "wp_13"
+      },
+      {
+        "root_word": "support",
+        "word": "support",
+        "phonetics": "[səˈpɔrt]",
+        "pos": "vt",
+        "verb_pattern": "support-supported-supported",
+        "definition_zh": "支持",
+        "number": "wp_13_1"
+      },
+      {
+        "root_word": "support",
+        "word": "support",
+        "phonetics": "[səˈpɔrt]",
+        "pos": "vt",
+        "verb_pattern": "support-supported-supported",
+        "definition_zh": "支撐",
+        "number": "wp_13_2"
+      },
+      {
+        "root_word": "struggle",
+        "word": "struggle",
+        "phonetics": "[ˈstrʌɡl]",
+        "pos": "vi",
+        "verb_pattern": "struggle-struggled-struggled",
+        "definition_zh": "艱難地前進",
+        "number": "wp_14"
+      },
+      {
+        "root_word": "struggle",
+        "word": "struggle",
+        "phonetics": "[ˈstrʌɡl]",
+        "pos": "vi",
+        "verb_pattern": "struggle-struggled-struggled",
+        "definition_zh": "奮力；爭取",
+        "number": "wp_14_1"
+      },
+      {
+        "root_word": "struggle",
+        "word": "struggle",
+        "phonetics": "[ˈstrʌɡl]",
+        "pos": "n",
+        "definition_zh": "奮鬥；努力",
+        "number": "wp_14_2"
+      },
+      {
+        "root_word": "pride",
+        "word": "pride",
+        "phonetics": "[praɪd]",
+        "pos": "n",
+        "definition_zh": "驕傲；得意",
+        "number": "wp_15"
+      },
+      {
+        "root_word": "pride",
+        "word": "proud",
+        "phonetics": "[praʊd]",
+        "pos": "adj",
+        "definition_zh": "驕傲的；得意的",
+        "number": "wp_15_1"
+      },
+      {
+        "root_word": "emotional",
+        "word": "emotional",
+        "phonetics": "[ɪˈmoʊʃənəl]",
+        "pos": "adj",
+        "definition_zh": "情緒激動的",
+        "number": "wp_16"
+      },
+      {
+        "root_word": "emotional",
+        "word": "emotional",
+        "phonetics": "[ɪˈmoʊʃənəl]",
+        "pos": "adj",
+        "definition_zh": "情緒的；情感的",
+        "number": "wp_16_1"
+      },
+      {
+        "root_word": "emotional",
+        "word": "emotion",
+        "phonetics": "[ɪˈmoʊʃən]",
+        "pos": "n",
+        "definition_zh": "情緒；情感",
+        "number": "wp_16_2"
+      },
+      {
+        "root_word": "admiration",
+        "word": "admiration",
+        "phonetics": "[ˌædməˈreɪʃən]",
+        "pos": "n",
+        "definition_zh": "欽佩",
+        "number": "wp_17"
+      },
+      {
+        "root_word": "admiration",
+        "word": "admire",
+        "phonetics": "[ədˈmaɪər]",
+        "pos": "vt",
+        "verb_pattern": "admire-admired-admired",
+        "definition_zh": "欽佩",
+        "number": "wp_17_1"
+      },
+      {
+        "root_word": "respect",
+        "word": "respect",
+        "phonetics": "[rɪˈspɛkt]",
+        "pos": "n",
+        "definition_zh": "尊敬；尊重",
+        "number": "wp_18"
+      },
+      {
+        "root_word": "respect",
+        "word": "respect",
+        "phonetics": "[rɪˈspɛkt]",
+        "pos": "vt",
+        "verb_pattern": "respect-respected-respected",
+        "definition_zh": "尊敬；尊重",
+        "number": "wp_18_1"
+      }
+    ]
+  },
+  {
+    "section": "Idioms and Phrases",
+    "word_forms": [
+      {
+        "root_word": "take off",
+        "word": "take off",
+        "definition_zh": "(1) 出發",
+        "number": "ip_1"
+      },
+      {
+        "root_word": "take off",
+        "word": "take off",
+        "definition_zh": "(2) 起飛",
+        "number": "ip_1_1"
+      },
+      {
+        "root_word": "have one’s heart set on",
+        "word": "have one’s heart set on",
+        "definition_zh": "一心一意想要做某事",
+        "number": "ip_2"
+      },
+      {
+        "root_word": "speed (...) up",
+        "word": "speed up",
+        "definition_zh": "加速",
+        "number": "ip_3"
+      },
+      {
+        "root_word": "rise to one’s feet",
+        "word": "rise to one’s feet",
+        "definition_zh": "（重新）站起來",
+        "number": "ip_4"
+      },
+      {
+        "root_word": "carry...through",
+        "word": "carry...through",
+        "definition_zh": "幫助……渡過難關",
+        "number": "ip_5"
+      }
+    ]
+  },
+  {
+    "section": "Words for Recognition",
+    "word_forms": [
+      {
+        "root_word": "stadium",
+        "word": "stadium",
+        "phonetics": "[`stedɪəm]",
+        "syllable": "sta·di·um",
+        "pos": "n. [C]",
+        "definition_zh": "體育場",
+        "number": "wr_1"
+      },
+      {
+        "root_word": "bang",
+        "word": "bang",
+        "phonetics": "[bæŋ]",
+        "syllable": "bang",
+        "pos": "n. [C]",
+        "definition_zh": "砰的一聲",
+        "number": "wr_2"
+      },
+      {
+        "root_word": "Derek Redmond",
+        "word": "Derek Redmond",
+        "phonetics": "[`dɛrək `rɛdmʌnd]",
+        "syllable": "De·rek Red·mond",
+        "pos": "n.",
+        "definition_zh": "德瑞克．雷德蒙",
+        "number": "wr_3"
+      },
+      {
+        "root_word": "the Olympics",
+        "word": "the Olympics",
+        "phonetics": "[ðɪo`lɪmpɪks]",
+        "syllable": "the O·lym·pics",
+        "pos": "n. pl.",
+        "definition_zh": "奧林匹克運動會",
+        "number": "wr_4"
+      },
+      {
+        "root_word": "Olympic",
+        "word": "Olympic",
+        "phonetics": "[o`lɪmpɪk]",
+        "syllable": "O·lym·pic",
+        "pos": "adj.",
+        "definition_zh": "奧林匹克運動會的",
+        "number": "wr_5"
+      },
+      {
+        "root_word": "unbearable",
+        "word": "unbearable",
+        "phonetics": "[ʌn`bɛrəbḷ]",
+        "syllable": "un·bear·able",
+        "pos": "adj.",
+        "definition_zh": "難以忍受的",
+        "number": "wr_6"
+      },
+      {
+        "root_word": "limb",
+        "word": "limb",
+        "phonetics": "[lɪm]",
+        "syllable": "limb",
+        "pos": "n. [C]",
+        "definition_zh": "四肢之一（手臂或腿）",
+        "number": "wr_7"
+      },
+      {
+        "root_word": "hamstring",
+        "word": "hamstring",
+        "phonetics": "[`hæmˏstrɪŋ]",
+        "syllable": "ham·string",
+        "pos": "n. [C]",
+        "definition_zh": "腿後肌腱（位於大腿後側）",
+        "number": "wr_8"
+      },
+      {
+        "root_word": "stand",
+        "word": "stand",
+        "phonetics": "[stænd]",
+        "syllable": "stand",
+        "pos": "n. [C]",
+        "definition_zh": "看臺",
+        "number": "wr_9"
+      },
+      {
+        "root_word": "security guard",
+        "word": "security guard",
+        "phonetics": "[sɪ`kjʊrətɪ ˏgɑrd]",
+        "syllable": "se·cu·ri·ty guard",
+        "pos": "n. [C]",
+        "definition_zh": "保安人員",
+        "number": "wr_10"
+      },
+      {
+        "root_word": "spectator",
+        "word": "spectator",
+        "phonetics": "[`spɛktetɚ]",
+        "syllable": "spec·ta·tor",
+        "pos": "n. [C]",
+        "definition_zh": "（體育比賽的）觀眾",
+        "number": "wr_11"
+      }
+    ]
+  }
+]

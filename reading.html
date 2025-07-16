@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英文自學霸</title>
+    <link rel="stylesheet" href="./code/styles.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./code/script.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- 頂部固定導航欄 -->
+        <div id="fixed-top">
+            <div class="header-row">
+                <a href="index.html" class="home-button" style="position: absolute; left: 16px;">🏠</a>
+                <h1>{{ lessonTitle }}</h1>
+                <button id="instructionsBtn" style="position: absolute; right: 16px;" @click="toggleInstructions">💡</button>
+            </div>
+        </div>
+
+        <!-- 滾動內容區域 -->
+        <div id="scrollable-content">
+            <div id="article">
+                <div v-if="error" class="error-message">{{ error }}</div>
+                
+                <div v-if="loading" class="loading-spinner">
+                    <div style="text-align: center;">正在載入內容...</div>
+                </div>
+                
+                <div v-else-if="paragraphData.length > 0">
+                    <div v-for="(paragraph, index) in paragraphData" :key="index" class="paragraph">
+                        <div v-html="processedParagraphs[index]"></div>
+                        <div v-show="showTranslation" class="translation">{{ paragraph.chinese }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 單詞解釋彈窗 -->
+        <div id="wordInfo"></div>
+        <div id="overlay" @click="closeVocabularyCard"></div>
+        
+        <!-- 詞彙卡片 -->
+        <div class="vocabulary-card" id="vocabularyCard">
+            <h3>單字資訊</h3>
+            <div class="definition" v-if="selectedWord">
+                <p><strong>單字： </strong>{{ selectedWord.word }}</p>
+                <p v-if="selectedWord.phonetics"><strong>音標： </strong>{{ selectedWord.phonetics }}</p>
+                <p v-if="selectedWord.pos"><strong>詞性： </strong>{{ selectedWord.pos }}.</p>
+                <p><strong>中文意思:</strong> {{ selectedWord.definition_zh }}</p>
+            </div>
+        </div>
+        
+        <!-- 速度調節模態窗 -->
+        <div id="speedModal">
+            <div id="speedControlPanel">
+                <div class="modal-drag-indicator"></div>
+                <div class="current-speed-display" id="modalSpeedValue">1x</div>
+                
+                <div class="speed-slider-container">
+                    <input type="range" id="speedControlModal" min="0.25" max="2" step="0.05" value="1">
+                </div>
+                
+                <div class="speed-presets">
+                    <button class="speed-preset-btn" data-speed="0.25">0.25</button>
+                    <button class="speed-preset-btn active" data-speed="1.0">1.0</button>
+                    <button class="speed-preset-btn" data-speed="1.25">1.25</button>
+                    <button class="speed-preset-btn" data-speed="1.5">1.5</button>
+                    <button class="speed-preset-btn" data-speed="2.0">2.0</button>
+                </div>
+                <div class="speed-label">正常</div>
+            </div>
+        </div>
+
+        <!-- 底部控制欄 -->
+        <div id="bottom-controls">
+            <div class="control-item">
+                <button id="speedBtn" @click="toggleSpeedModal">
+                    <span class="speed-icon">⏱</span>
+                    <span id="speedValue" class="speed-value">1.0x</span>
+                </button>
+                <span class="control-label">語速</span>
+            </div>
+            
+            <div class="control-item">
+                <button id="playPauseBtn" @click="togglePlayPause">▶</button>
+                <span class="control-label">播放</span>
+            </div>
+            
+            <div class="control-item">
+                <label class="translation-switch" title="切換中英文顯示">
+                    <input type="checkbox" id="translationToggle" v-model="showTranslation">
+                    <span class="slider">
+                        <span class="lang-label lang-en">英文</span>
+                        <span class="lang-label lang-zh">中英</span>
+                    </span>
+                </label>
+                <span class="control-label">語言切換</span>
+            </div>
+        </div>
+
+        <!-- 音頻進度條 -->
+        <!-- <div id="audio-progress-container">
+            <div id="audio-progress-bar"></div>
+        </div> -->
+
+        <!-- 使用說明模態窗 -->
+        <div id="instructionsModal">
+            <div id="instructionsContent">
+                <div class="instructions-header">
+                    <h2>使用說明</h2>
+                    <button class="close-button" @click="toggleInstructions">×</button>
+                </div>
+                <div class="instructions-body">
+                    <div class="instruction-item">
+                        <span class="instruction-icon">🔊</span>
+                        <p>點擊任何單字可聽發音</p>
+                    </div>
+                    <div class="instruction-item">
+                        <span class="instruction-icon">📖</span>
+                        <p>點擊<strong>粗體字</strong>可查看詳細解釋</p>
+                    </div>
+                    <div class="instruction-item">
+                        <span class="instruction-icon">⏱️</span>
+                        <p>點擊速度按鈕可調整朗讀速度</p>
+                    </div>
+                    <div class="instruction-item">
+                        <span class="instruction-icon">▶️</span>
+                        <p>使用播放按鈕控制全文朗讀</p>
+                    </div>
+                    <div class="instruction-item">
+                        <span class="instruction-icon">🔄</span>
+                        <p>切換翻譯開關可顯示/隱藏中文翻譯</p>
+                    </div>
+                </div>
+                <button class="got-it-button" @click="toggleInstructions">知道了！</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

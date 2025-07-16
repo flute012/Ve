@@ -1,0 +1,686 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #2d3748;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+b sup span{
+    display: none;
+    color: #000;
+}
+
+
+div .paragraph {
+    line-height: 1.6;
+    font-size: 1.1rem; 
+    margin-bottom:.85rem;
+}
+
+[id^="wr_"] {
+    color: #3e0160;
+
+  }
+
+[id^="ip_"] {
+    color: #0277de;
+    text-decoration: underline;
+    text-decoration-color: #0277de;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 0.6px;
+  }
+
+
+p{
+    display:block;
+    margin:1rem;
+    unicode-bidi:isolate;
+}
+#fixed-top {
+    background: linear-gradient(to right, #4a90e2, #63b3ed);
+    padding: 0 16px;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 16px;
+}
+
+h1 {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+
+#instructionsBtn {
+    position: absolute;
+    right: 16px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+/* 底部控制欄樣式 */
+#bottom-controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    border-top: 1px solid #eee;
+    z-index: 1000;
+}
+
+.control-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 33.33%;
+}
+
+.control-label {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 語速按鈕樣式 */
+#speedBtn {
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    color: #555;
+    font-size: 20px;
+}
+
+.speed-icon {
+    font-size: 20px;
+}
+
+.speed-value {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: #4a90e2;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-right: 0;
+}
+
+/* 播放按鈕樣式 */
+
+#playPauseBtn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #4a90e2;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(74,144,226,0.4);
+    position: relative;
+        /* 清除所有預設內容 */
+    font-size: 0;
+    color: transparent;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+#playPauseBtn::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+#playPauseBtn.playing::before {
+    background: linear-gradient(
+        to right,
+        white 35%,
+        transparent 35%,
+        transparent 65%,
+        white 65%
+    );
+}
+
+#playPauseBtn:not(.playing)::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent white;
+    margin-left: 4px;
+    background: transparent;
+}
+
+/* 翻譯開關樣式 - 改進視覺提示 */
+.translation-switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.translation-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f0f0f0;
+    transition: .4s;
+    border-radius: 34px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+/* 兩種語言標籤 */
+.lang-label {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.lang-en {
+    left: 0;
+}
+
+.lang-zh {
+    right: 0;
+}
+
+/* 滑塊 */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 36px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 34px;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 當前選中的語言高亮顯示 */
+input:not(:checked) + .slider .lang-en {
+    color: #4a90e2;
+    font-weight: bold;
+    z-index: 2;
+}
+
+input:checked + .slider .lang-zh {
+    color: #4a90e2;
+    font-weight: bold;
+    z-index: 2;
+}
+
+input:checked + .slider {
+    background-color: #f0f0f0;
+}
+
+input:checked + .slider:before {
+    transform: translateX(36px);
+}
+
+/* 調整滾動內容區域 */
+#scrollable-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 60px; /* 調整為頂部欄高度 */
+    margin-bottom: 90px; /* 為底部控制欄留出空間 */
+    background-color: #f0f4f8;
+}
+
+#article {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.highlight {
+    background-color: #ffff00;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: 700 !important;
+}
+
+.phrase.bold {
+    font-weight: 700 !important;
+    border-bottom: 1px dotted #4a90e2;
+    display: inline-block;
+    color: #4a90e2; /* 添加藍色 */
+}
+
+/* 提高特異性 */
+#article .phrase.bold {
+    font-weight: 700 !important;
+    color: #4a90e2; /* 確保藍色會被應用 */
+}
+
+#article .bold {
+    font-weight: 700 !important;
+}
+
+#wordInfo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 1000;
+    max-width: 80%;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 999;
+}
+
+#instructionsModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#instructionsContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 90%;
+    width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.instructions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.instructions-header h2 {
+    margin: 0;
+    color: #2d3748;
+    font-size: 1.5rem;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.instructions-body {
+    margin-bottom: 24px;
+}
+
+.instruction-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 12px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+}
+
+.instruction-icon {
+    font-size: 24px;
+    margin-right: 16px;
+    width: 32px;
+    text-align: center;
+}
+
+.instruction-item p {
+    margin: 0;
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.got-it-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.got-it-button:hover {
+    background-color: #357abd;
+}
+
+/* 中文翻譯樣式 */
+.translation {
+    padding: 10px 15px;
+    margin-top: 8px;
+    background-color: #f5f5f5;
+    border-left: 3px solid #4a90e2;
+    font-size: 0.95em;
+    color: #555;
+    border-radius: 0 5px 5px 0;
+    margin-bottom: 15px;
+}
+
+/* 速度調節模態窗 */
+#speedModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    background-color: rgba(0,0,0,0.5);
+    animation: fadeIn 0.2s ease-out;
+}
+
+#speedControlPanel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    width: 85%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* 頂部拖動條 */
+.modal-drag-indicator {
+    width: 40px;
+    height: 4px;
+    background-color: #e2e2e2;
+    border-radius: 2px;
+    margin: 0 auto 20px;
+}
+
+/* 當前速度顯示 */
+.current-speed-display {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* 改進的滑動條 */
+.speed-slider-container {
+    padding: 0 10px;
+    margin-bottom: 40px;
+}
+
+#speedControlModal {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #e2e2e2;
+    border-radius: 3px;
+    outline: none;
+}
+
+#speedControlModal::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #4a90e2;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 預設速度選項 */
+.speed-presets {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.speed-preset-btn {
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 0;
+    width: 18%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.speed-preset-btn:hover {
+    background-color: #e5e5e5;
+}
+
+.speed-preset-btn.active {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* 標籤 */
+.speed-label {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* 單詞和文字樣式 */
+.word {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 2px 0;
+}
+
+.word:hover {
+    background-color: #f0f8ff;
+}
+
+.current-word {
+    background-color: #ffff99;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* 詞彙卡片樣式 */
+.vocabulary-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    max-width: 80%;
+    width: 320px;
+    display: none;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -48%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+.vocabulary-card h3 {
+    color: #2d3748;
+    margin-top: 0;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* .phonetics {
+    color: #666;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.pos {
+    color: #999;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    margin-left: 10px;
+} */
+
+.definition {
+    line-height: 1.8;
+}
+
+/* 進度條 */
+#audio-progress-container {
+    display: none;
+    width: 100%;
+    background-color: #eee;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0 15px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+    right: 0;
+}
+
+#audio-progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4a90e2;
+    border-radius: 3px;
+    transition: width 0.1s;
+}
+
+/* 詞彙相關 */
+.vocab-word {
+    color: #0066cc;
+    cursor: pointer;
+    border-bottom: 1px dotted #0066cc;
+    position: relative;
+}
+
+.vocab-word:hover {
+    background-color: #e8f4ff;
+}
+
+@media screen and (max-width: 480px) {
+    div .paragraph {
+        margin-bottom:1rem;
+    }
+  }
+
