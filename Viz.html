@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GA4 互動式視覺化系統</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body {
+      font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useRef, useEffect } = React;
+
+    function GA4Visualizer() {
+      const [users, setUsers] = useState([]);
+      const [stats, setStats] = useState({
+        sessions: 0,
+        engagedSessions: 0,
+        bouncedSessions: 0,
+        newUsers: 0,
+        returningUsers: 0,
+        events: 0,
+      });
+      const [pageStats, setPageStats] = useState({
+        home: { sessions: 0, activeUsers: 0, newUsers: 0, events: 0 },
+        catalog: { sessions: 0, activeUsers: 0, newUsers: 0, events: 0 },
+        shelfA: { sessions: 0, activeUsers: 0, newUsers: 0, events: 0 },
+        shelfB: { sessions: 0, activeUsers: 0, newUsers: 0, events: 0 },
+        shelfC: { sessions: 0, activeUsers: 0, newUsers: 0, events: 0 },
+      });
+      const [isPlaying, setIsPlaying] = useState(false);
+      const [isPaused, setIsPaused] = useState(false);
+      const pauseRef = useRef(false);
+      const [eventLog, setEventLog] = useState([]);
+      const nextUserId = useRef(0);
+
+      const bounceRate = stats.sessions > 0 ? Math.round((stats.bouncedSessions / stats.sessions) * 100) : 0;
+      const engagementRate = stats.sessions > 0 ? Math.round((stats.engagedSessions / stats.sessions) * 100) : 0;
+      const totalUsers = stats.newUsers + stats.returningUsers;
+      const returnRate = totalUsers > 0 ? Math.round((stats.returningUsers / totalUsers) * 100) : 0;
+
+      const addUser = (isNew = true) => {
+        const id = nextUserId.current++;
+        const user = {
+          id,
+          isNew,
+          position: "home",
+          hasEngaged: false,
+          sessionStarted: true,
+          isIdle: false,
+          visitedPages: { home: false, catalog: false, shelfA: false, shelfB: false, shelfC: false },
+          autoPlay: true,
+        };
+        setUsers((prev) => [...prev, user]);
+        
+        logEvent(isNew ? "first_visit" : "returning_visit", id);
+        logEvent("session_start", id);
+        
+        setStats((prev) => ({
+          ...prev,
+          sessions: prev.sessions + 1,
+          newUsers: prev.newUsers + (isNew ? 1 : 0),
+          returningUsers: prev.returningUsers + (isNew ? 0 : 1),
+          events: prev.events + (isNew ? 2 : 1),
+        }));
+        
+        updatePageStats("home", { 
+          sessions: 1, 
+          newUsers: isNew ? 1 : 0, 
+          events: isNew ? 2 : 1 
+        });
+        
+        setTimeout(() => {
+          setUsers((prev) =>
+            prev.map((u) => (u.id === id ? { ...u, visitedPages: { ...u.visitedPages, home: true } } : u))
+          );
+        }, 0);
+        
+        return id;
+      };
+
+      const moveUser = (userId, position) => {
+        setUsers((prev) =>
+          prev.map((u) => {
+            if (u.id === userId) {
+              const updated = { ...u, position };
+              
+              if (position === "catalog" && !u.visitedPages.catalog) {
+                logEvent("page_view", userId);
+                setStats((s) => ({ ...s, events: s.events + 1 }));
+                updatePageStats("catalog", { 
+                  sessions: 1, 
+                  newUsers: u.isNew ? 1 : 0, 
+                  events: 1 
+                });
+                updated.visitedPages = { ...u.visitedPages, catalog: true };
+              }
+              
+              if (position === "shelfA" && !u.visitedPages.shelfA) {
+                logEvent("scroll", userId);
+                setStats((s) => ({ ...s, events: s.events + 1 }));
+                updatePageStats("shelfA", { 
+                  sessions: 1, 
+                  newUsers: u.isNew ? 1 : 0, 
+                  events: 1 
+                });
+                updated.visitedPages = { ...u.visitedPages, shelfA: true };
+                
+                if (!u.hasEngaged) {
+                  logEvent("user_engagement", userId);
+                  setStats((s) => ({ ...s, events: s.events + 1 }));
+                  updatePageStats("shelfA", { activeUsers: 1, events: 1 });
+                  updated.hasEngaged = true;
+                }
+              }
+              
+              if (position === "shelfB" && !u.visitedPages.shelfB) {
+                logEvent("scroll", userId);
+                setStats((s) => ({ ...s, events: s.events + 1 }));
+                updatePageStats("shelfB", { 
+                  sessions: 1, 
+                  newUsers: u.isNew ? 1 : 0, 
+                  events: 1 
+                });
+                updated.visitedPages = { ...u.visitedPages, shelfB: true };
+                
+                if (!u.hasEngaged) {
+                  logEvent("user_engagement", userId);
+                  setStats((s) => ({ ...s, events: s.events + 1 }));
+                  updatePageStats("shelfB", { activeUsers: 1, events: 1 });
+                  updated.hasEngaged = true;
+                }
+              }
+              
+              if (position === "shelfC" && !u.visitedPages.shelfC) {
+                logEvent("scroll", userId);
+                setStats((s) => ({ ...s, events: s.events + 1 }));
+                updatePageStats("shelfC", { 
+                  sessions: 1, 
+                  newUsers: u.isNew ? 1 : 0, 
+                  events: 1 
+                });
+                updated.visitedPages = { ...u.visitedPages, shelfC: true };
+                
+                if (!u.hasEngaged) {
+                  logEvent("user_engagement", userId);
+                  setStats((s) => ({ ...s, events: s.events + 1 }));
+                  updatePageStats("shelfC", { activeUsers: 1, events: 1 });
+                  updated.hasEngaged = true;
+                }
+              }
+              
+              return updated;
+            }
+            return u;
+          })
+        );
+      };
+
+      const removeUser = (userId) => {
+        setUsers((prev) => {
+          const user = prev.find(u => u.id === userId);
+          if (user) {
+            setStats((s) => ({
+              ...s,
+              engagedSessions: s.engagedSessions + (user.hasEngaged ? 1 : 0),
+              bouncedSessions: s.bouncedSessions + (user.hasEngaged ? 0 : 1),
+            }));
+          }
+          return prev.filter((u) => u.id !== userId);
+        });
+      };
+
+      const setUserIdle = (userId, isIdle) => {
+        setUsers((prev) =>
+          prev.map((u) => (u.id === userId ? { ...u, isIdle } : u))
+        );
+      };
+
+      const logEvent = (eventName, userId) => {
+        const icons = {
+          first_visit: "🎯",
+          returning_visit: "🔁",
+          session_start: "📋",
+          page_view: "📄",
+          scroll: "📜",
+          user_engagement: "⚡",
+          idle_on_home: "💤",
+          idle_on_catalog: "💤",
+          idle_on_shelf: "💤",
+        };
+        setEventLog((prev) => [
+          { event: eventName, userId, icon: icons[eventName], time: Date.now() },
+          ...prev.slice(0, 9),
+        ]);
+      };
+
+      const updatePageStats = (page, changes) => {
+        setPageStats((prev) => {
+          const updated = { ...prev };
+          Object.keys(changes).forEach((key) => {
+            updated[page][key] = prev[page][key] + changes[key];
+          });
+          return updated;
+        });
+      };
+
+      const reset = () => {
+        setIsPlaying(false);
+        setIsPaused(false);
+        pauseRef.current = false;
+        setUsers([]);
+        setStats({
+          sessions: 0,
+          engagedSessions: 0,
+          bouncedSessions: 0,
+          newUsers: 0,
+          returningUsers: 0,
+          events: 0,
+        });
+        setPageStats({
+          home: { sessions: 0, activeUsers: 0, newUsers: 0, events: 0 },
+          catalog: { sessions: 0, activeUsers: 0, newUsers: 0, events: 0 },
+          shelfA: { sessions: 0, activeUsers: 0, newUsers: 0, events: 0 },
+          shelfB: { sessions: 0, activeUsers: 0, newUsers: 0, events: 0 },
+          shelfC: { sessions: 0, activeUsers: 0, newUsers: 0, events: 0 },
+        });
+        setEventLog([]);
+        nextUserId.current = 0;
+      };
+
+      const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+      const playDemo = async () => {
+        const autoUserIds = users.filter(u => u.autoPlay).map(u => u.id);
+        
+        if (autoUserIds.length === 0) {
+          alert("請先新增使用者（點擊「➕ 新使用者」或「🔁 回訪者」按鈕）");
+          return;
+        }
+
+        setIsPlaying(true);
+        setIsPaused(false);
+        pauseRef.current = false;
+        
+        for (const userId of autoUserIds) {
+          if (pauseRef.current) {
+            setIsPaused(true);
+            await waitForResume();
+            setIsPaused(false);
+          }
+          await simulateUserBehavior(userId);
+          await delay(300);
+        }
+        
+        setIsPlaying(false);
+        setIsPaused(false);
+      };
+
+      const waitForResume = () => {
+        return new Promise((resolve) => {
+          const checkPause = setInterval(() => {
+            if (!pauseRef.current) {
+              clearInterval(checkPause);
+              resolve();
+            }
+          }, 100);
+        });
+      };
+
+      const togglePause = () => {
+        pauseRef.current = !pauseRef.current;
+        setIsPaused(!isPaused);
+      };
+
+      const simulateUserBehavior = async (userId) => {
+        const checkPause = async () => {
+          if (pauseRef.current) {
+            setIsPaused(true);
+            await waitForResume();
+            setIsPaused(false);
+          }
+        };
+
+        await delay(1000);
+        
+        const behavior = Math.random();
+        
+        if (behavior < 0.15) {
+          await checkPause();
+          moveUser(userId, "exit");
+          await delay(1400);
+        } else if (behavior < 0.25) {
+          await checkPause();
+          setUserIdle(userId, true);
+          logEvent("idle_on_home", userId);
+          await delay(3000);
+          await checkPause();
+          setUserIdle(userId, false);
+          moveUser(userId, "exit");
+          await delay(1400);
+        } else if (behavior < 0.4) {
+          await checkPause();
+          moveUser(userId, "catalog");
+          await delay(1200);
+          await checkPause();
+          moveUser(userId, "exit");
+          await delay(1400);
+        } else if (behavior < 0.5) {
+          await checkPause();
+          moveUser(userId, "catalog");
+          await delay(1000);
+          await checkPause();
+          setUserIdle(userId, true);
+          logEvent("idle_on_catalog", userId);
+          await delay(3000);
+          await checkPause();
+          setUserIdle(userId, false);
+          moveUser(userId, "exit");
+          await delay(1400);
+        } else {
+          await checkPause();
+          moveUser(userId, "catalog");
+          await delay(1000);
+          
+          const numShelves = Math.floor(Math.random() * 3) + 1;
+          const shelves = ["shelfA", "shelfB", "shelfC"];
+          const shuffled = shelves.sort(() => Math.random() - 0.5);
+          
+          for (let j = 0; j < numShelves; j++) {
+            await checkPause();
+            moveUser(userId, shuffled[j]);
+            await delay(1000);
+            
+            if (Math.random() < 0.3) {
+              await checkPause();
+              setUserIdle(userId, true);
+              logEvent("idle_on_shelf", userId);
+              await delay(2500);
+              await checkPause();
+              setUserIdle(userId, false);
+            }
+            
+            await checkPause();
+            moveUser(userId, "catalog");
+            await delay(800);
+          }
+          
+          await checkPause();
+          moveUser(userId, "exit");
+          await delay(1400);
+        }
+        
+        removeUser(userId);
+      };
+
+      return (
+        <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-slate-100 p-6">
+          <div className="max-w-7xl mx-auto space-y-6">
+            
+            <div className="text-center">
+              <h1 className="text-3xl font-bold text-gray-800">GA4 互動式視覺化系統</h1>
+              <p className="text-gray-600 mt-2">追蹤使用者從進入到互動的完整流程</p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <StatCard label="工作階段" value={stats.sessions} icon="📋" />
+              <StatCard label="互動工作階段" value={stats.engagedSessions} icon="⚡" />
+              <StatCard label="新使用者" value={stats.newUsers} icon="🎯" />
+              <StatCard label="事件總數" value={stats.events} icon="📊" />
+            </div>
+
+            <div className="bg-white/80 backdrop-blur rounded-2xl shadow-xl p-6 relative h-[525px] border">
+              
+              <div className="absolute left-4 top-1/2 -translate-y-1/2">
+                <div className="bg-gradient-to-r from-indigo-200 to-indigo-100 border-2 border-indigo-400 rounded-lg p-4 w-32 h-[260px] flex flex-col items-center justify-center shadow-lg">
+                  <div className="text-4xl mb-3">🏠</div>
+                  <div className="text-base font-bold text-gray-800 mb-2">首頁入口</div>
+                  <div className="text-xs text-indigo-700 text-center">session_start<br/>first_visit</div>
+                </div>
+              </div>
+
+              <div className="absolute left-1/2 -translate-x-1/2 ml-[-140px] top-1/2 -translate-y-1/2">
+                <div className="bg-cyan-50 border-2 border-cyan-300 rounded-xl p-4 w-40 h-[280px] flex flex-col justify-center text-center shadow-lg">
+                  <div className="text-3xl mb-1">🗺️</div>
+                  <div className="font-bold text-sm text-gray-800">貨物區</div>
+                  <div className="text-xs text-gray-600 mt-1">目錄頁面</div>
+                  <div className="text-xs text-cyan-600 mt-1">page_view</div>
+                  <div className="flex gap-2 justify-center mt-2">
+                    <div className="w-6 h-6 bg-purple-500 rounded"></div>
+                    <div className="w-6 h-6 bg-cyan-500 rounded-full"></div>
+                    <div className="w-0 h-0 border-l-[6px] border-r-[6px] border-b-[10px] border-transparent border-b-orange-500"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute right-12 top-12">
+                <div className="bg-orange-50 border-2 border-orange-300 rounded-xl p-3 w-[235px] h-[143px] flex flex-col justify-center text-center shadow-lg">
+                  <div className="text-2xl mb-1">🛍️</div>
+                  <div className="font-bold text-sm text-gray-800">貨架A</div>
+                  <div className="text-xs text-gray-600">商品子頁 #1</div>
+                  <div className="text-xs text-orange-600 mt-1">user_engagement</div>
+                  <div className="flex gap-2 justify-center mt-2">
+                    {[1, 2, 3].map((i) => (
+                      <div key={i} className="w-10 h-[30px] bg-gradient-to-b from-orange-400 to-orange-500 rounded-lg flex items-center justify-center text-lg">
+                        🧴
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute right-12 top-1/2 -translate-y-1/2">
+                <div className="bg-green-50 border-2 border-green-300 rounded-xl p-3 w-[235px] h-[143px] flex flex-col justify-center text-center shadow-lg">
+                  <div className="text-2xl mb-1">🛍️</div>
+                  <div className="font-bold text-sm text-gray-800">貨架B</div>
+                  <div className="text-xs text-gray-600">商品子頁 #2</div>
+                  <div className="text-xs text-green-600 mt-1">user_engagement</div>
+                  <div className="flex gap-2 justify-center mt-2">
+                    {[1, 2, 3].map((i) => (
+                      <div key={i} className="w-10 h-[30px] bg-gradient-to-b from-green-400 to-green-500 rounded-lg flex items-center justify-center text-lg">
+                        🧴
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute right-12 bottom-12">
+                <div className="bg-purple-50 border-2 border-purple-300 rounded-xl p-3 w-[235px] h-[143px] flex flex-col justify-center text-center shadow-lg">
+                  <div className="text-2xl mb-1">🛍️</div>
+                  <div className="font-bold text-sm text-gray-800">貨架C</div>
+                  <div className="text-xs text-gray-600">商品子頁 #3</div>
+                  <div className="text-xs text-purple-600 mt-1">user_engagement</div>
+                  <div className="flex gap-2 justify-center mt-2">
+                    {[1, 2, 3].map((i) => (
+                      <div key={i} className="w-10 h-[30px] bg-gradient-to-b from-purple-400 to-purple-500 rounded-lg flex items-center justify-center text-lg">
+                        🧴
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute left-[170px] top-1/2 -translate-y-1/2 text-gray-400 text-2xl">→</div>
+              <div className="absolute left-[250px] top-1/2 -translate-y-1/2 text-gray-400 text-2xl">→</div>
+              <div className="absolute left-[350px] top-1/2 -translate-y-1/2 text-gray-400 text-2xl">→</div>
+              <div className="absolute left-[450px] top-1/2 -translate-y-1/2 text-gray-400 text-2xl">→</div>
+              <div className="absolute left-[550px] top-1/2 -translate-y-1/2 text-gray-400 text-2xl">→</div>
+              <div className="absolute left-[670px] top-1/2 -translate-y-1/2 text-gray-400 text-2xl">→</div>
+
+              {users.map((user) => (
+                <User key={user.id} user={user} />
+              ))}
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-3">
+              <button
+                onClick={() => addUser(true)}
+                className="bg-green-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-700 transition"
+                disabled={isPlaying}
+              >
+                ➕ 新使用者
+              </button>
+              <button
+                onClick={() => addUser(false)}
+                className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
+                disabled={isPlaying}
+              >
+                🔁 回訪者
+              </button>
+              <button
+                onClick={playDemo}
+                className="bg-indigo-600 text-white px-5 py-2 rounded-lg shadow hover:bg-indigo-700 transition"
+                disabled={isPlaying || users.filter(u => u.autoPlay).length === 0}
+              >
+                ▶️ 播放示範 ({users.filter(u => u.autoPlay).length})
+              </button>
+              {isPlaying && (
+                <button
+                  onClick={togglePause}
+                  className={`${isPaused ? 'bg-green-600 hover:bg-green-700' : 'bg-yellow-600 hover:bg-yellow-700'} text-white px-5 py-2 rounded-lg shadow transition`}
+                >
+                  {isPaused ? '▶️ 繼續' : '⏸️ 暫停'}
+                </button>
+              )}
+              <button
+                onClick={reset}
+                className="bg-gray-600 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-700 transition"
+              >
+                🔄 重置
+              </button>
+            </div>
+
+            <div className="bg-white/80 backdrop-blur rounded-xl shadow-lg p-6 border">
+              <h3 className="text-lg font-bold text-gray-800 mb-4">📈 各頁面統計</h3>
+              <div className="grid grid-cols-3 gap-4">
+                <PageStatsCard
+                  title="🏠 首頁"
+                  sessions={pageStats.home.sessions}
+                  activeUsers={pageStats.home.activeUsers}
+                  newUsers={pageStats.home.newUsers}
+                  events={pageStats.home.events}
+                />
+                <PageStatsCard
+                  title="🗺️ 目錄"
+                  sessions={pageStats.catalog.sessions}
+                  activeUsers={pageStats.catalog.activeUsers}
+                  newUsers={pageStats.catalog.newUsers}
+                  events={pageStats.catalog.events}
+                />
+                <div className="bg-gray-50 rounded-lg border border-dashed border-gray-300 h-[170px]"></div>
+              </div>
+              <div className="grid grid-cols-3 gap-4 mt-4">
+                <PageStatsCard
+                  title="🛍️ 貨架A"
+                  sessions={pageStats.shelfA.sessions}
+                  activeUsers={pageStats.shelfA.activeUsers}
+                  newUsers={pageStats.shelfA.newUsers}
+                  events={pageStats.shelfA.events}
+                />
+                <PageStatsCard
+                  title="🛍️ 貨架B"
+                  sessions={pageStats.shelfB.sessions}
+                  activeUsers={pageStats.shelfB.activeUsers}
+                  newUsers={pageStats.shelfB.newUsers}
+                  events={pageStats.shelfB.events}
+                />
+                <PageStatsCard
+                  title="🛍️ 貨架C"
+                  sessions={pageStats.shelfC.sessions}
+                  activeUsers={pageStats.shelfC.activeUsers}
+                  newUsers={pageStats.shelfC.newUsers}
+                  events={pageStats.shelfC.events}
+                />
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              
+              <div className="bg-white/80 backdrop-blur rounded-xl shadow-lg p-6 border">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">📊 進階指標</h3>
+                <p className="text-xs text-gray-500 mb-4">（全站層級統計）</p>
+                <div className="space-y-4">
+                  <div>
+                    <MetricRow label="跳出率" value={`${bounceRate}%`} desc="未觸發互動事件即離開的比例" />
+                    <div className="mt-1 text-xs text-gray-500 font-mono bg-gray-50 p-2 rounded">
+                      = (跳出工作階段數 / 總工作階段) × 100%
+                      <br/>= ({stats.bouncedSessions} / {stats.sessions}) × 100%
+                    </div>
+                  </div>
+                  <div>
+                    <MetricRow label="參與率" value={`${engagementRate}%`} desc="有互動的工作階段比例" />
+                    <div className="mt-1 text-xs text-gray-500 font-mono bg-gray-50 p-2 rounded">
+                      = (互動工作階段 / 總工作階段) × 100%
+                      <br/>= ({stats.engagedSessions} / {stats.sessions}) × 100%
+                    </div>
+                  </div>
+                  <div>
+                    <MetricRow label="回訪率" value={`${returnRate}%`} desc="再次訪問的使用者比例" />
+                    <div className="mt-1 text-xs text-gray-500 font-mono bg-gray-50 p-2 rounded">
+                      = (回訪者 / 總使用者) × 100%
+                      <br/>= ({stats.returningUsers} / {totalUsers}) × 100%
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white/80 backdrop-blur rounded-xl shadow-lg p-6 border">
+                <h3 className="text-lg font-bold text-gray-800 mb-4">📝 事件日誌</h3>
+                <div className="space-y-2 max-h-[280px] overflow-y-auto">
+                  {eventLog.map((log, idx) => (
+                    <div key={idx} className="text-sm text-gray-700 flex items-center gap-2">
+                      <span>{log.icon}</span>
+                      <span className="font-mono text-indigo-600">User{log.userId}</span>
+                      <span>→</span>
+                      <span className="font-semibold">{log.event}</span>
+                    </div>
+                  ))}
+                  {eventLog.length === 0 && (
+                    <div className="text-gray-400 text-sm">尚無事件...</div>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/80 backdrop-blur rounded-xl shadow-lg p-6 border">
+              <h3 className="text-xl font-bold text-gray-800 mb-4">📘 GA4 事件與指標說明</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <TermItem icon="📋" term="session_start" desc="工作階段開始，追蹤每次訪問" />
+                  <TermItem icon="📄" term="page_view" desc="頁面瀏覽，記錄使用者瀏覽的頁面" />
+                  <TermItem icon="🎯" term="first_visit" desc="第一次訪問（僅新使用者觸發）" />
+                  <TermItem icon="📜" term="scroll" desc="向下滾動達 90%，衡量內容吸引力" />
+                  <TermItem icon="⚡" term="user_engagement" desc="前景互動超過 10 秒或有 2 次以上頁面瀏覽" />
+                  <TermItem icon="💤" term="閒置狀態" desc="使用者停留在頁面但無動作" />
+                </div>
+                <div className="space-y-2">
+                  <TermItem icon="🚪" term="跳出率" desc="未觸發 user_engagement 的工作階段比例" />
+                  <TermItem icon="📊" term="參與率" desc="有觸發 user_engagement 的工作階段比例" />
+                  <TermItem icon="🔁" term="回訪率" desc="再次訪問的使用者佔總使用者比例" />
+                  <TermItem icon="🎲" term="模擬行為" desc="15% 快速離開、10% 閒置首頁、15% 僅看目錄、10% 閒置目錄、50% 深度瀏覽" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    function User({ user }) {
+      const positions = {
+        home: { x: 50, y: 230 },
+        catalog: { x: 600, y: 230 },
+        shelfA: { x: 770, y: 70 },
+        shelfB: { x: 770, y: 230 },
+        shelfC: { x: 770, y: 390 },
+        exit: { x: 50, y: 230 },
+      };
+
+      const pos = positions[user.position];
+      const color = user.isNew ? "bg-green-500" : "bg-blue-500";
+
+      return (
+        <div
+          className="absolute transition-all duration-1000 ease-in-out z-10"
+          style={{ left: pos.x, top: pos.y }}
+        >
+          <div className="relative">
+            <div className={`absolute -top-8 left-1/2 -translate-x-1/2 ${color} text-white text-xs px-2 py-1 rounded whitespace-nowrap shadow-md`}>
+              {user.isNew ? "新" : "回訪"}
+            </div>
+            <div className={`text-4xl ${user.isIdle ? 'opacity-50' : ''}`}>
+              {user.isNew ? "🧍‍♀️" : "🧍‍♂️"}
+            </div>
+            {user.isIdle && (
+              <div className="absolute -top-2 -right-4 text-2xl animate-pulse">💤</div>
+            )}
+            {user.hasEngaged && !user.isIdle && (
+              <div className="absolute -top-4 -right-2 text-2xl animate-bounce">⚡</div>
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    function StatCard({ label, value, icon }) {
+      return (
+        <div className="bg-white/80 backdrop-blur rounded-xl p-4 shadow-lg border text-center">
+          <div className="text-2xl mb-1">{icon}</div>
+          <div className="text-sm text-gray-600">{label}</div>
+          <div className="text-2xl font-bold text-indigo-700">{value}</div>
+        </div>
+      );
+    }
+
+    function MetricRow({ label, value, desc }) {
+      return (
+        <div className="flex justify-between items-center">
+          <div>
+            <div className="font-semibold text-gray-800">{label}</div>
+            <div className="text-xs text-gray-500">{desc}</div>
+          </div>
+          <div className="text-xl font-bold text-indigo-700">{value}</div>
+        </div>
+      );
+    }
+
+    function TermItem({ icon, term, desc }) {
+      return (
+        <div className="flex gap-2">
+          <span className="text-xl">{icon}</span>
+          <div>
+            <span className="font-semibold text-gray-800">{term}</span>
+            <span className="text-sm text-gray-600">：{desc}</span>
+          </div>
+        </div>
+      );
+    }
+
+    function PageStatsCard({ title, sessions, activeUsers, newUsers, events }) {
+      return (
+        <div className="bg-gradient-to-br from-indigo-50 to-white rounded-lg p-5 border border-indigo-100 h-[170px] flex flex-col justify-center hover:shadow-lg transition-shadow">
+          <div className="text-center font-bold text-gray-800 mb-4 text-base">{title}</div>
+          <div className="space-y-2 text-sm">
+            <div className="flex justify-between items-center">
+              <span className="text-gray-600">工作階段</span>
+              <span className="font-semibold text-indigo-700 text-lg">{sessions}</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-gray-600">活躍使用者</span>
+              <span className="font-semibold text-indigo-700 text-lg">{activeUsers}</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-gray-600">新使用者</span>
+              <span className="font-semibold text-indigo-700 text-lg">{newUsers}</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-gray-600">事件數</span>
+              <span className="font-semibold text-indigo-700 text-lg">{events}</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<GA4Visualizer />);
+  </script>
+</body>
+</html>
